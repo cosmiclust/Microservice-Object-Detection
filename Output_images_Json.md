@@ -116,7 +116,8 @@
 }
 ```
 
-4. ![Uploading ba11a610-4423-4499-b09c-3548e5308e82.jpg…]()
+4. ![ba11a610-4423-4499-b09c-3548e5308e82](https://github.com/user-attachments/assets/4c5d2739-3292-4836-bb0e-c284f44e8058)
+
 ```json
 {
   "detections": [],
