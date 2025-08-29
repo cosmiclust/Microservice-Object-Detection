@@ -1,5 +1,6 @@
 1. ![1cad56f5-8658-4cbe-a581-0f210077ff93](https://github.com/user-attachments/assets/cecfe88e-c26d-43b8-b19d-76c99467c331)
-# JSON
+
+```json
 {
   "detections": [
     {
@@ -15,7 +16,10 @@
   ],
   "output_image": "runs/detect\\a92f3d65-7d0e-4983-a19a-f117bcbb858d.jpg"
 }
+```
+
 2. ![3f24d759-a5a3-41c4-80a7-31ecf7d94f13](https://github.com/user-attachments/assets/10bc1bfe-01de-4d2d-ab4c-e3e503658e3c)
+```json
 {
   "detections": [
     {
@@ -58,8 +62,14 @@
         410.09954833984375
       ]
     }
-    3. ![440af481-7378-4847-a345-d246fbeb90c5](https://github.com/user-attachments/assets/55e04f7b-b30d-4021-ad8d-7dfd6ccd0e32)
-    {
+  ],
+  "output_image": "runs/detect\\3f24d759-a5a3-41c4-80a7-31ecf7d94f13.jpg"
+}
+```
+
+3. ![440af481-7378-4847-a345-d246fbeb90c5](https://github.com/user-attachments/assets/55e04f7b-b30d-4021-ad8d-7dfd6ccd0e32)
+```json
+{
   "detections": [
     {
       "object": "person",
@@ -104,13 +114,18 @@
   ],
   "output_image": "runs/detect\\440af481-7378-4847-a345-d246fbeb90c5.jpg"
 }
+```
+
 4. ![Uploading ba11a610-4423-4499-b09c-3548e5308e82.jpg…]()
+```json
 {
   "detections": [],
   "output_image": "runs/detect\\ba11a610-4423-4499-b09c-3548e5308e82.jpg"
 }
-5. ![c4473690-8897-412f-8e5d-6450eadfd6de](https://github.com/user-attachments/assets/8a23b381-311c-4ac1-80ca-8e9eefb80d17)
+```
 
+5. ![c4473690-8897-412f-8e5d-6450eadfd6de](https://github.com/user-attachments/assets/8a23b381-311c-4ac1-80ca-8e9eefb80d17)
+```json
 {
   "detections": [
     {
@@ -136,8 +151,4 @@
   ],
   "output_image": "runs/detect\\c4473690-8897-412f-8e5d-6450eadfd6de.jpg"
 }
-
-
-  ],
-  "output_image": "runs/detect\\3f24d759-a5a3-41c4-80a7-31ecf7d94f13.jpg"
-}
+```
