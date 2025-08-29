@@ -11,15 +11,20 @@ model = YOLO("yolov3.pt")  # Make sure yolov3.pt is in the same folder
 
 app = FastAPI(title="YOLOv3 AI Backend")
 
+# Create folders if they don't exist
 UPLOAD_FOLDER = "uploads"
 OUTPUT_FOLDER = "runs/detect"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
+# Root endpoint to check server
+@app.get("/")
+def root():
+    return {"message": "YOLOv3 FastAPI backend is running!"}
 
 @app.post("/detect")
 async def detect_image(file: UploadFile = File(...)):
-    # Save uploaded file with random name
+    # Save uploaded file with a random name
     file_ext = os.path.splitext(file.filename)[1]
     file_name = f"{uuid.uuid4()}{file_ext}"
     file_path = os.path.join(UPLOAD_FOLDER, file_name)
@@ -32,7 +37,7 @@ async def detect_image(file: UploadFile = File(...)):
 
     # Save annotated image
     output_img_path = os.path.join(OUTPUT_FOLDER, file_name)
-    annotated_img = results[0].plot()   # numpy array (BGR)
+    annotated_img = results[0].plot()  # numpy array (BGR)
     cv2.imwrite(output_img_path, annotated_img)
 
     # Collect detection results
@@ -50,4 +55,3 @@ async def detect_image(file: UploadFile = File(...)):
         "detections": detections,
         "output_image": output_img_path
     })
-
