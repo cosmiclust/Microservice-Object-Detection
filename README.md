@@ -13,17 +13,17 @@ The microservice design ensures modularity, making it easier to maintain, extend
 
 ```
 detector/
-    ├── output_images/            # Contains model-annotated output images
-    ├── sample_images/            # Sample input images for testing
-    ├── detect_ai.py              # Main detection script using YOLOv3
-    ├── Dockerfile                # Dockerfile for building the detection service
-    ├── Link to YoloV3 weights.md # Instructions to download YOLOv3 weights
-    └── requirement.txt           # Python dependencies for detection
+    ├── output_images/           
+    ├── sample_images/            
+    ├── detect_ai.py             
+    ├── Dockerfile                
+    ├── Link to YoloV3 weights.md 
+    └── requirement.txt           
 
 ui-backend/
-    ├── ai_backend.py             # FastAPI backend exposing detection APIs
-    ├── Dockerfile                # Dockerfile for backend service
-    └── requirements.txt          # Backend dependencies
+    ├── ai_backend.py            
+    ├── Dockerfile                
+    └── requirements.txt         
 ```
 
 ---
