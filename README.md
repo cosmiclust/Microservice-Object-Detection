@@ -122,6 +122,5 @@ Use the `/detect` endpoint to upload an image and receive:
 }
 ```
 
-The output image path can be used to view the annotated result.
 
 ---
