@@ -121,6 +121,9 @@ Use the `/detect` endpoint to upload an image and receive:
   "output_image": "runs/detect/83c89f20-dfd3-4d7a-8dfd-8f057e156fa2.jpg"
 }
 ```
+The object detection model used in this project is a pre-trained YOLOv3 model. It has not been fine-tuned on a custom dataset, so in some rare cases (for example, a flying fish being classified as a bird) the predictions may not be fully accurate. Fine-tuning on a task-specific dataset would improve the accuracy of such cases.
+
+
 
 
 ---
